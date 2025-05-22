@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ob-Havo 5 Kunlik</title>
+  <link rel="stylesheet" href="index.css" />
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>⛅ Ob-Havo Ma'lumotlari</h1>
+    <div class="navbar">
+      <input class="input" type="text" placeholder="Shaharni kiriting..." onkeyup="searchInput(event)" />
+      <button onclick="search()">Qidirish</button>
+      <button onclick="startVoice()">🎤 Ovozli qidiruv</button>
+      <button onclick="toggleMode()" class="mode-toggle">🌙</button>
+    </div>
+    
+    <div class="block"></div>
+    <h3 class="forecast-title">📅 5 kunlik prognoz</h3>
+    <div class="forecast"></div>
+    <div id="map"></div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
